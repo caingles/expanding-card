@@ -24,3 +24,42 @@
     height: 450px;
     padding: 0 1rem ;
 }
+
+.gallery-wrapper .item {
+    cursor: pointer;
+    flex: 1;
+    position: relative;
+    width: 150px;
+}
+
+.item figure {
+    height: 100%;
+    width: 100%;
+}
+
+.item figure img {
+    border-radius: 2rem;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.item p {
+    bottom: 1rem;
+    color: #fff;
+    display: inline-block;
+    display: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    left: 1.25rem;
+    position: absolute;
+}
+
+.-active {
+    cursor: default !important;
+    flex: 12 !important;
+}
+
+.-active p{
+    display: inline-block;
+}
