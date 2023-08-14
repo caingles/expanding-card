@@ -28,7 +28,9 @@
 .gallery-wrapper .item {
     cursor: pointer;
     flex: 1;
+    overflow: hidden;
     position: relative;
+    transition: all 1500ms;
     width: 150px;
 }
 
@@ -48,18 +50,20 @@
     bottom: 1rem;
     color: #fff;
     display: inline-block;
-    display: none;
     font-size: 1.5rem;
     font-weight: 600;
-    left: 1.25rem;
+    left: 200%;
     position: absolute;
+    width: 100%;
 }
 
 .-active {
     cursor: default !important;
     flex: 12 !important;
+    transition: all 1500ms;
 }
 
 .-active p{
-    display: inline-block;
+    left: 1rem;
+    transition: left 1500ms;
 }
