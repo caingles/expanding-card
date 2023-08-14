@@ -67,3 +67,30 @@
     left: 1rem;
     transition: left 1500ms;
 }
+
+/* Starting media query */
+@media only screen and (max-width: 992px) {
+    .gallery-wrapper {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .gallery-wrapper {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery-wrapper {
+        border: 1px solid red !important;
+        flex-direction: column;
+        height: 500px !important;
+    }
+
+    .gallery-wrapper .item {
+        flex: 2;
+        gap: 2rem;
+        width: 100%;
+    }
+}
